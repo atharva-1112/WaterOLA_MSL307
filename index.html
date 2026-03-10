@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaterOLA – India's Waterway Marketplace</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+            <img src="img.jpeg" alt="WaterOla Logo" class="logo-img"> <span class="logo-water">Water</span><span class="logo-ola">OLA</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#solution">Solution</a></li>
+            <li><a href="#competition">Competition</a></li>
+            <li><a href="#moat">Our Moat</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-water-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="diya-particle"></div>
+        <div class="diya-particle"></div>
+        <div class="diya-particle"></div>
+        <div class="diya-particle"></div>
+        <div class="diya-particle"></div>
+    </div>
+    <!-- Kerala Houseboat Silhouette -->
+    <svg class="hero-boat" viewBox="0 0 300 120" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10,90 Q30,70 60,80 L80,75 L85,50 C85,50 90,30 100,25 C110,20 130,18 140,20 L145,22 L148,18 C150,15 155,12 160,15 L162,18 L165,20 C175,18 195,20 205,25 C215,30 220,50 220,50 L225,75 L240,80 Q270,70 290,90 Z" fill="rgba(79,195,247,0.15)"/>
+        <path d="M60,80 Q150,60 240,80" stroke="rgba(79,195,247,0.2)" fill="none" stroke-width="2"/>
+        <path d="M100,50 Q150,35 200,50" stroke="rgba(79,195,247,0.12)" fill="none" stroke-width="1.5"/>
+        <rect x="130" y="35" width="40" height="30" rx="3" fill="rgba(79,195,247,0.08)"/>
+        <line x1="150" y1="10" x2="150" y2="35" stroke="rgba(79,195,247,0.15)" stroke-width="1.5"/>
+        <path d="M150,10 L175,25 L150,22 Z" fill="rgba(41,182,246,0.1)"/>
+        <path d="M30,95 Q150,105 270,95" stroke="rgba(79,195,247,0.08)" fill="none" stroke-width="1"/>
+    </svg>
+    <div class="container hero-content">
+        <h1>Reimagining India's Rivers as <span class="gradient-text">Highways of Commerce &amp; Travel</span></h1>
+        <p class="hero-subtitle">An Ola/Uber-style digital platform for waterways — integrating cargo logistics and tourism bookings across India's 14,500 km of navigable rivers and coasts.</p>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">14,500 km</span>
+                <span class="stat-label">Navigable Waterways</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">~2%</span>
+                <span class="stat-label">Cargo on Waterways</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">&lt;1%</span>
+                <span class="stat-label">Tourism on Waterways</span>
+            </div>
+        </div>
+        <div class="hero-cta">
+            <a href="#solution" class="btn btn-primary">Explore Our Solution</a>
+            <a href="#competition" class="btn btn-outline">View Competition</a>
+        </div>
+    </div>
+    <div class="hero-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path fill="var(--dark)" d="M0,64L60,69.3C120,75,240,85,360,80C480,75,600,53,720,48C840,43,960,53,1080,64C1200,75,1320,85,1380,90.7L1440,96L1440,120L0,120Z" opacity="0.6"></path>
+            <path fill="var(--dark)" d="M0,96L60,90.7C120,85,240,75,360,69.3C480,64,600,64,720,69.3C840,75,960,85,1080,85.3C1200,85,1320,75,1380,69.3L1440,64L1440,120L0,120Z" opacity="0.8"></path>
+            <path fill="var(--dark)" d="M0,96L48,101.3C96,107,192,117,288,117.3C384,117,480,107,576,96C672,85,768,75,864,80C960,85,1056,107,1152,112C1248,117,1344,107,1392,101.3L1440,96L1440,120L0,120Z"></path>
+        </svg>
+    </div>
+    <div class="scroll-indicator">
+        <div class="mouse"><div class="wheel"></div></div>
+    </div>
+</section>
+
+<!-- Problem Section -->
+<section class="section" id="problem">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">The Challenge</span>
+            <h2>India's Waterways Are <span class="gradient-text">Massively Underutilized</span></h2>
+            <p class="section-desc">A highly fragmented, offline, and inefficient ecosystem — shippers &amp; tourists struggle to access reliable services.</p>
+        </div>
+
+        <div class="pain-points-grid">
+            <div class="pain-card shipper-card">
+                <div class="pain-icon">🏗️</div>
+                <h3>Shipper Pain Points</h3>
+                <ul>
+                    <li><span class="bullet">●</span> Delays &amp; no guaranteed schedules</li>
+                    <li><span class="bullet">●</span> High logistics cost (14% of GDP vs 8–10% global benchmark)</li>
+                    <li><span class="bullet">●</span> Lack of visibility &amp; real-time tracking</li>
+                </ul>
+            </div>
+            <div class="pain-card tourist-card">
+                <div class="pain-icon">🧳</div>
+                <h3>Tourist Pain Points</h3>
+                <ul>
+                    <li><span class="bullet">●</span> No single booking platform exists</li>
+                    <li><span class="bullet">●</span> Cash-driven transactions, inconsistent service</li>
+                    <li><span class="bullet">●</span> Low discovery of river cruises &amp; experiences</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Interview Insights -->
+        <div class="insights-box">
+            <h3>📋 Interview Insights — What Surprised Us</h3>
+            <div class="insights-grid">
+                <div class="insight-item">
+                    <h4>Word-of-mouth dominance</h4>
+                    <p>Students rely heavily on word-of-mouth &amp; physical presence. Even in tourism-heavy states (Odisha, Assam, Gujarat), booking is mostly done on the spot — not digitally.</p>
+                    <span class="insight-tag">Assumption Broken</span>
+                </div>
+                <div class="insight-item">
+                    <h4>Price confusion is universal</h4>
+                    <p>Multiple interviewees complained about no standard pricing — operators charging differently for the same trip. Pricing transparency stood out over safety or wait times.</p>
+                    <span class="insight-tag">Assumption Broken</span>
+                </div>
+                <div class="insight-item">
+                    <h4>Universal pain across segments</h4>
+                    <p>Tourists, commuters, boatmen, SMEs, and tour operators all shared the same fundamental pain points: unpredictability, lack of digital booking, and zero transparency.</p>
+                    <span class="insight-tag">Key Finding</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Solution Section -->
+<section class="section section-dark" id="solution">
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,30 C360,50 720,0 1440,30 L1440,0 L0,0 Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Our Solution</span>
+            <h2>WaterOLA — <span class="gradient-text">Book. Track. Pay.</span></h2>
+            <p class="section-desc">A unified digital platform for cargo movement and tourism bookings across India's rivers and coasts — think Ola/Uber for waterways.</p>
+        </div>
+
+        <div class="solution-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h4>Real-time Booking &amp; Scheduling</h4>
+                <p>Instant booking with live availability for cargo slots, ferries, boats, and river cruises.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h4>AI-Based Route Optimization</h4>
+                <p>Demand aggregation and intelligent route planning to maximize vessel utilization.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⭐</div>
+                <h4>Review &amp; Rating System</h4>
+                <p>Community-driven quality assurance for operators, boats, and services.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💳</div>
+                <h4>Digital Payments</h4>
+                <p>Seamless UPI, card, and wallet integration — no more cash-only transactions.</p>
+            </div>
+        </div>
+
+        <!-- Value Proposition -->
+        <div class="value-prop-grid">
+            <div class="vp-card">
+                <h4>For Shippers</h4>
+                <ul>
+                    <li>20–30% cost savings vs road transport</li>
+                    <li>Reliable, trackable schedules</li>
+                    <li>Expanded reach across India's waterways</li>
+                </ul>
+            </div>
+            <div class="vp-card">
+                <h4>For Tourists</h4>
+                <ul>
+                    <li>Seamless booking &amp; discovery</li>
+                    <li>Safer, reliable travel experience</li>
+                    <li>Bundled packages with local tourism</li>
+                </ul>
+            </div>
+            <div class="vp-card">
+                <h4>For Operators</h4>
+                <ul>
+                    <li>Secure, fast digital payments</li>
+                    <li>Marketing &amp; visibility through platform</li>
+                    <li>Demand aggregation &amp; utilization boost</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="competitive-edge">
+            <h3>Competitive Edge</h3>
+            <div class="edge-items">
+                <div class="edge-item">
+                    <span class="edge-icon">🔗</span>
+                    <p><strong>Integration:</strong> Freight transport + tourist bookings in a single app</p>
+                </div>
+                <div class="edge-item">
+                    <span class="edge-icon">📈</span>
+                    <p><strong>Network Effect:</strong> More shippers &amp; tourists → more operators → more users</p>
+                </div>
+                <div class="edge-item">
+                    <span class="edge-icon">🚀</span>
+                    <p><strong>Scalability:</strong> Expand from Ganga &amp; Kerala to all of India's waterways</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- User Personas -->
+<section class="section" id="personas">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Who We Serve</span>
+            <h2>User <span class="gradient-text">Personas</span></h2>
+        </div>
+        <div class="persona-grid">
+            <div class="persona-card">
+                <div class="persona-avatar tourist-avatar">👤</div>
+                <h4>Ravi Sharma (M, 28)</h4>
+                <p class="persona-role">Tourist planning a trip to Varanasi</p>
+                <div class="persona-section">
+                    <h5>Pain Points</h5>
+                    <ul>
+                        <li>Price confusion — operators charging different prices for the same trip</li>
+                        <li>Inconsistent service — cash-driven, unorganized, not pre-bookable</li>
+                    </ul>
+                </div>
+                <div class="persona-section">
+                    <h5>Why WaterOLA?</h5>
+                    <ul>
+                        <li>Transparent pricing &amp; digital payments (UPI/wallets)</li>
+                        <li>Seamless discovery and real-time booking on a single platform</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="persona-card">
+                <div class="persona-avatar operator-avatar">👤</div>
+                <h4>Pramod Shah (M, 48)</h4>
+                <p class="persona-role">Owner of 1–3 small, non-regulated boats</p>
+                <div class="persona-section">
+                    <h5>Pain Points</h5>
+                    <ul>
+                        <li>Low visibility — relies on physical presence for customers</li>
+                        <li>Slow/unsecure payments — cash-driven transactions</li>
+                        <li>Poor utilization — inefficient demand matching, high downtime</li>
+                    </ul>
+                </div>
+                <div class="persona-section">
+                    <h5>Why WaterOLA?</h5>
+                    <ul>
+                        <li>Secure, fast digital payments with faster settlement</li>
+                        <li>Platform listing drives high demand visibility</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Competitive Landscape -->
+<section class="section section-dark" id="competition">
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,20 C480,50 960,0 1440,30 L1440,0 L0,0 Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Competition</span>
+            <h2>Competitive <span class="gradient-text">Landscape</span></h2>
+        </div>
+
+        <!-- Market Share Chart -->
+        <div class="market-share-chart">
+            <h3>Market Share Distribution</h3>
+            <div class="share-bars">
+                <div class="share-bar-item">
+                    <span class="share-label">Govt. Ferries / Municipal</span>
+                    <div class="share-bar-track"><div class="share-bar-fill" style="width: 45%"><span>45%</span></div></div>
+                </div>
+                <div class="share-bar-item">
+                    <span class="share-label">Green Ocean / Makruzz / Regional</span>
+                    <div class="share-bar-track"><div class="share-bar-fill" style="width: 35%"><span>35%</span></div></div>
+                </div>
+                <div class="share-bar-item">
+                    <span class="share-label">Klook / TripAdvisor / OTAs</span>
+                    <div class="share-bar-track"><div class="share-bar-fill" style="width: 13.5%"><span>13.5%</span></div></div>
+                </div>
+                <div class="share-bar-item">
+                    <span class="share-label">M2M Ferries</span>
+                    <div class="share-bar-track"><div class="share-bar-fill" style="width: 5%"><span>5%</span></div></div>
+                </div>
+                <div class="share-bar-item">
+                    <span class="share-label">GetMyBoat</span>
+                    <div class="share-bar-track"><div class="share-bar-fill" style="width: 2%"><span>1%</span></div></div>
+                </div>
+                <div class="share-bar-item">
+                    <span class="share-label">Others (Pandaw, Oberoi, Ferryway)</span>
+                    <div class="share-bar-track"><div class="share-bar-fill" style="width: 1.5%"><span>0.5%</span></div></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- Use Cases -->
+<section class="section" id="use-cases">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Real-World Applications</span>
+            <h2>Use <span class="gradient-text">Cases</span></h2>
+        </div>
+        <div class="usecase-grid">
+            <div class="usecase-card">
+                <div class="usecase-icon">🛶</div>
+                <h4>Shikara Rides — Dal Lake, Srinagar</h4>
+                <p><strong>Scenario:</strong> Tourists want to pre-book shikara rides or scenic boat tours.</p>
+                <p><strong>WaterOLA Role:</strong> Mobile booking, partnerships with local boatmen, transparent pricing, and tracking.</p>
+            </div>
+            <div class="usecase-card">
+                <div class="usecase-icon">⛴️</div>
+                <h4>Commuter Ferry — Guwahati's Brahmaputra</h4>
+                <p><strong>Scenario:</strong> Daily commuters face unreliable ferry services across the river.</p>
+                <p><strong>WaterOLA Role:</strong> App-based ferry rides with real-time updates, reliable scheduling, and digital payments.</p>
+            </div>
+        </div>
+
+        <div class="lotus-sep">✦ ✦ ✦</div>
+
+        <div class="regional-insights">
+            <h3>Regional Insights</h3>
+            <div class="region-cards">
+                <div class="region-card">
+                    <h4>🌊 Kerala</h4>
+                    <p>Grassroots private tourism in backwater boating — formalizing benefits local livelihoods sustainably.</p>
+                </div>
+                <div class="region-card">
+                    <h4>🏛️ Madhya Pradesh</h4>
+                    <p>PPP Boat Clubs &amp; Cruise Feasibility — strong infrastructure support.</p>
+                </div>
+                <div class="region-card">
+                    <h4>🚢 Punjab</h4>
+                    <p>Reviving historic canals via private boating initiatives and Sindhwan Canal.</p>
+                </div>
+                <div class="region-card">
+                    <h4>🏔️ J&amp;K</h4>
+                    <p>IWAI &amp; J&amp;K collaboration for river cruise tourism — operators limited in open sources.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Moat / Defensibility -->
+<section class="section" id="moat">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Defensibility</span>
+            <h2>Our <span class="gradient-text">Unique Moat</span></h2>
+        </div>
+
+        <div class="moat-grid">
+            <div class="moat-card">
+                <div class="moat-number">1</div>
+                <h4>Network Effects</h4>
+                <p>More operators → more routes → more users → higher demand → more operators join. Once the network grows, competitors cannot easily replicate it.</p>
+            </div>
+            <div class="moat-card">
+                <div class="moat-number">2</div>
+                <h4>Government Partnerships</h4>
+                <p>Partner with Inland Waterways Authority of India for licensing, safety regulation, and route permissions — creating barriers for competitors.</p>
+            </div>
+            <div class="moat-card">
+                <div class="moat-number">3</div>
+                <h4>Data Advantage</h4>
+                <p>Collect valuable data: boat traffic patterns, tourist demand, ferry usage, river congestion — extremely valuable for tourism boards, city planners, and governments.</p>
+            </div>
+            <div class="moat-card">
+                <div class="moat-number">4</div>
+                <h4>Hardware + Software</h4>
+                <p>GPS + safety sensors installed on boats for live tracking, safety alerts, and demand analytics. WaterOLA becomes a tech infrastructure company, not just an app.</p>
+            </div>
+            <div class="moat-card">
+                <div class="moat-number">5</div>
+                <h4>Own the Supply</h4>
+                <p>Onboard thousands of operators, offer boat financing and insurance. Strong operator loyalty to the platform locks in supply-side network effects.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="img.jpeg" alt="WaterOla Logo" class="logo-img"> <span class="logo-water">Water</span><span class="logo-ola">OLA</span>
+                <p>Reimagining India's rivers as highways of commerce and travel.</p>
+            </div>
+            <div class="footer-info">
+                <p>Sources: IWAI, Ministry of Tourism (India), Klook, TripAdvisor, Pandaw, M2M Ferries</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
